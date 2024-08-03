@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.header {
+    position: relative;
+    background-image: url(/assets/img/img-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130vh;
+    max-width: 100%;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 2; 
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+}
+
+.main-header {
+    padding: 10rem 0 0 9rem;
+    position: relative;
+    z-index: 2;
+    width: 60%;
+}
+
+.main-header h1 {
+    font-size: 100px;
+    color: #FFFFFF;
+    line-height: 1.2;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main-header h2 {
+    font-size: 63px;
+    color: #FFFFFF;
+    line-height: 1.4;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.main-header p {
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 1.4;
+    font-family: "KoHo", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.container {
+    position: relative; 
+    top: 116%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Menengahkan container */
+    background-color: #cab576;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    z-index: 3; 
+    padding: 20px;
+}
+
+.container .paragraf {
+    display: flex;
+    width: 30%;
+    padding: 1.3rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+}
+
+.container .paragraf p {
+    margin-left: 2rem;
+}
+
+.container h1:hover {
+    transition: 0.1s;
+    border-bottom: 2px solid #FFBF00;
+    margin-top: -5px;
+}
+
+.container .icon-contain {
+    height: 6rem;
+}
+
+.container .paragraf h1 {
+    font-size: 22px;
+    line-height: 3;
+    font-family: "KoHo", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.container .paragraf p {
+    font-size: 20px;
+    font-family: "KoHo", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.main-contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    width: 60%;
+}
+
+.title img {
+    margin-bottom: 55rem;
+}
+
+.title-texts {
+    margin-left: 15px;
+}
+
+.title .title-thin {
+    color: #FFBF00;
+    font-size: 2.5rem;
+    font-family: "KoHo", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 10px; 
+}
+
+.title .title-bold {
+    font-size: 2.5rem;
+    font-family: "KoHo", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.title p {
+    color: black;
+    font-size: 1.2rem;
+    font-family: "KoHo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    line-height: 1.4;
+    margin-top: 1rem;
+}
+
+
+
+.img-contain img {
+    /* height: 120vh; */
+    margin-bottom: 7rem;
+    width: 100%;
+    height: 100%;
+
+}
+
+.timeline-contents {
+    position: relative;
+}
+
+.timeline {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+    font-family: "KoHo", sans-serif;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 120%;
+    background: #8C8C8C;
+    margin-left: 14px;
+}
+
+.timeline:first-of-type::before {
+    top: 15px; 
+}
+
+.timeline:last-of-type::before {
+    height: calc(100% - 15px); 
+}
+
+.lingkaran {
+    width: 30px;
+    height: 30px;
+    background: #FFBF00;
+    border-radius: 50%;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.timeline-texts {
+    margin-left: 1rem;
+}
+
+.timeline-texts span {
+    color: blue;
+}
+
+.timeline-texts span:hover {
+    color: black;
+}
+
+.timeline h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.timeline p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.timeline:nth-of-type(4)::before {
+    height: 0; /* Stop the line after the third timeline item */
+}
+
+#perjanjian-contain {
+    margin-top: 10rem;
+    background-image: url(/assets/img/perang-background.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130vh;
+    font-family: "KoHo", sans-serif;
+    font-style: normal;
+}
+
+#perjanjian-contain::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.title-perjanjian {
+    position: relative;
+    color: #FFFFFF;
+    z-index: 2;
+    text-align: center;
+    padding-top: 6.7rem;
+    font-weight: 900;
+}
+
+.title-perjanjian p {
+    color: #222;
+}
+
+.horizontal-line {
+    position: relative;
+    width: 13%; 
+    height: 3px; 
+    background-color: #FFBF00; 
+    margin: 20px auto; 
+}   
+
+.card-perjanjian {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    position: relative;
+    width: 27%;
+    height: 24.5rem;
+    perspective: 1000px;
+    margin-top: 4rem;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: start;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+
+.card-front {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-back {
+    background: #fafafa;
+    color: #333;
+    transform: rotateY(180deg);
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    line-height: 1.4;
+    display: center;
+    background: #bba25f;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.card img {
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0; 
+}
+
+.card-front h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: -1.4rem;
+}
+
+.title-black {
+    color: #000;
+    font-size: 30px;
+    margin: 0;
+}
+
+.title-green {
+    color: #FFBF00;
+    font-size: 30px;
+    line-height: 2.5;
+    /* padding-left: 6.5rem; */
+}
+
+.paragraph {
+    flex: 1 1 30%; /* 3 kolom pada tampilan desktop */
+    margin-bottom: 20px;
+}
+
+.card .lingkaran-perjanjian {
+    width: 45px;
+    height: 45px;
+    background: #FFBF00;
+    border-radius: 50%;
+    transform: translateY(-50%); 
+    margin-left: 10%;
+}
+
+.card-back h1 {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    font-family: "KoHo", sans-serif;
+    font-style: normal;
+}
+
+/* end card-perjanjian */
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+    display: none;
+}
+
+.popup .content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #ffffff;
+    width: 800px;
+    height: 500px;
+    z-index: 4;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: "KoHo", sans-serif;
+    font-style: normal;
+    border-radius: 20px;
+}
+
+.popup .content h1 {
+    border-bottom: #FFBF00 solid 2px;
+}
+
+.popup .content p {
+    text-align: start;
+}
+
+.popup .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.scrollable-content {
+    margin-top: 20px;
+    max-height: 60vh;
+    overflow-y: auto;
+    padding-right: 20px; /* To avoid content overlapping with the scrollbar */
+}
+
+/* Optional: Styling for the scrollbar */
+.scrollable-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}   
+
+/* Biografi */
+#biografi-container h1{
+    font-size: 40px;
+    font-family: "KoHo", sans-serif;
+    font-style: normal;
+    display: center;
+    text-align: center;
+    padding: 5rem;
+}
+.biografi {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 8%;
+}
+
+.biografi .photo {
+    margin-left: 7%;
+}
+
+.biografi img {
+    margin-top: 10px;
+    margin-left: 6%;
+    position: absolute;
+    width: 16.5rem;
+    height: 18.8rem;
+    border-radius: 0 0 200px 200px;
+}
+
+.line-biografi {
+    margin-left: 5.3%;
+    border: 3px dashed #FFBF00;
+    position: absolute;
+    width: 283px;
+    height: 320px;
+    border-radius: 0 0 200px 200px;
+}
+
+.biografi-content {
+    padding: 0.5rem;
+    width: 60%;
+    font-weight: 400;
+}
+
+.biografi-content h2 {
+    font-size: 2rem;
+}
+
+.biografi-content p {
+    font-size: 18px;
+    width: 86%;
+}
+
+.title-line {
+    width: 43%; 
+    height: 3px; 
+    background-color: #FFBF00; 
+    margin: 14px 0 10px 0; 
+}
+
+#btntop {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 4;/* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #FFBF00; /* Set a background color */
+    color: white    ; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 13px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#btntop:hover {
+    background-color: #555;
+}
+
+.hide-scroll-to-top {
+    display: none;
+}
+
+footer {
+    padding-top: 30%;
+    padding: 30px;
+    background-color: #cab576;
+    height: 130px;
+}
+
+footer p {
+    font-size: 20px;
+    color: #dcdcdc;
+    text-align: center;
+    font-family: "KoHo", sans-serif;
+    font-style: normal;
+    margin-top: 20px;
+}
+
